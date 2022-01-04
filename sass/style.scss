@@ -1,0 +1,110 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Oswald", Verdana, sans-serif;
+  background-color: aqua;
+}
+
+.auction {
+  display: grid;
+  grid-template-columns: 20%;
+  grid-gap: 3vh;
+  justify-content: center;
+  margin-top: 10vh;
+}
+
+input {
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem;
+  transition: all 0.3s;
+  text-align: center;
+  height: 10vh;
+  width: 20vw;
+  justify-self: center;
+  font-size: 2rem;
+  font-weight: 300;
+  color: black;
+
+  &:hover {
+    transform: scale(1.03);
+    background-color: #e6e6e6;
+  }
+
+  &:focus {
+    outline: none;
+    transform: scale(1.1);
+  }
+}
+
+.item {
+  display: grid;
+  transition: all 0.2s;
+  position: absolute !important;
+  grid-template-columns: 50%;
+  justify-content: center;
+  grid-gap: 5%;
+  margin-top: 15vh;
+  margin-left: 50vw;
+  transform: translateX(-50%);
+}
+.auctionItem,
+.minprice {
+  font-size: 2rem;
+}
+
+button {
+  border: none;
+  padding: 1.4rem;
+  border-radius: 2rem;
+  transition: all 0.2s;
+  cursor: pointer;
+  color: dimgray;
+  font-weight: 300;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: #e6e6e6;
+    transform: scale(1.04);
+  }
+  &:active {
+    transform: translateY(2px);
+  }
+}
+
+.end {
+  margin-top: 5vh;
+}
+
+.hidden {
+  display: none !important;
+  width: 0%;
+}
+
+h1,
+h2 {
+  display: inline-block;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #581fe0;
+  font-weight: 400;
+}
+
+.auction__result {
+  position: absolute !important;
+  display: grid;
+  grid-template-columns: max-content;
+  justify-content: center;
+  grid-gap: 2rem;
+  margin-top: 20vh;
+  margin-left: 50vw;
+  transform: translateX(-50%);
+}
+
+h2 {
+  justify-self: center;
+  margin-top: 2rem;
+  font-size: 4rem;
+}

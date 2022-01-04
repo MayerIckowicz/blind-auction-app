@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap");
+    </style>
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Blind auction</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="item removehiddenafter">
+        <input
+          type="text"
+          class="auctionItem"
+          placeholder="Item to be auctioned"
+        />
+        <input
+          type="number"
+          class="minprice"
+          placeholder="min asking price"
+          min="1"
+        />
+        <button class="start__btn">Start Auction</button>
+      </div>
+      <div class="auction hidden">
+        <h1 class="item__display">item to be auctioned</h1>
+        <h1 class="price__display">Price:</h1>
+        <input type="text" class="name auctionInput" placeholder="name" />
+        <input
+          type="number"
+          class="bid auctionInput"
+          placeholder="bid"
+          min="1"
+        />
+        <button class="placebid">Place Bid</button>
+        <button class="end">End Auction</button>
+      </div>
+      <div class="auction__result hidden">
+        <h1 class="h1__result">there was a draw on the auction between:</h1>
+        <h2 class="h2__result">
+          player 1 <br />
+          player 2 <br />
+          player 3
+        </h2>
+      </div>
+    </div>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
